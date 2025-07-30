@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+}
+#left {
+  height: 100%;
+  width: 40%;
+  /* background-color: blue; */
+  position: relative;
+  background-color: rgb(153, 211, 234);
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+#right {
+  height: 100%;
+  width: 60%;
+  /* background-color: blueviolet; */
+}
+#rTop {
+  height: 45%;
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+}
+#rBottom {
+  height: 55%;
+  width: 100%;
+  /* background-color: green; */
+  background-image: url(https://media.istockphoto.com/id/915657126/photo/orange-juice-glass-jar-shot-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=rlj0FwRDQOAV_j8-MUQntzIj8fZegbMewj22nNXxiYc=);
+  background-position: center;
+  background-size: cover;
+}
+#rTopright {
+  height: 100%;
+  width: 50%;
+  /* background-color: orange; */
+  background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlfGVufDB8fDB8fHww);
+  background-position: center;
+  background-size: cover;
+}
+#rTopleft {
+  height: 100%;
+  width: 50%;
+  /* background-color: slateblue; */
+  background-image: url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b3JhbmdlfGVufDB8fDB8fHww);
+  background-position: center;
+  background-size: cover;
+}
+#navLeft {
+  width: 100%;
+  height: 30px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 20px 30px;
+}
+#Rnav a {
+  padding: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 500px;
+}
+#Rnav i {
+  color: rgb(40, 145, 180);
+}
+#left #textcenter {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#textcenter h1 {
+  font-weight: 100px;
+  font-size: 75px;
+}
+#textcenter h2 {
+  font-weight: 300px;
+  font-size: 25px;
+}
+#textcenter p {
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 200;
+  opacity: 0.6;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+#textcenter a {
+  text-decoration: none;
+  opacity: 0.6;
+  color: #000;
+  font-size: larger;
+  border-bottom: 2px solid #000;
+}
+@media (max-width: 500px) {
+  #main {
+    max-height: 500px;
+    flex-direction: column;
+  }
+  #main #left {
+    width: 100%;
+    height:100%;
+  }
+}
